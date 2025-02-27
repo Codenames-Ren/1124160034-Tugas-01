@@ -14,7 +14,7 @@
   --bg-color: #000;
   --second-bg-color: #161616;
   --text-color: #fff;
-  --main-color: #ff0000;
+  --main-color: #ed2323;
 }
 
 html,
@@ -349,7 +349,7 @@ span {
 }
 
 .experience {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .experience-container {
@@ -368,7 +368,7 @@ span {
 }
 
 .experience-box:hover {
-  background: transparent;
+  background: var(--second-bg-color);
   color: var(--text-color);
   transform: scale(1.03);
   border: 1px solid var(--main-color);
@@ -418,7 +418,7 @@ span {
 /* Contact Section */
 
 .contact {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
   margin-bottom: 0;
   flex: 1;
 }
