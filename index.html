@@ -4,30 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <h3>My&nbsp;<span>Project.</span></h3>
-        <ul>
-          <li><a href="#about-me">Home</a></li>
-          <li><a href="#my-project">My Project</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
+    <header class="header">
+      <a href="#" class="logo">My Portfolio</a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#experience">My Project</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <section class="main-banner">
-        <h1>Welcome to my profile!</h1>
-      </section>
     </header>
+
     <main>
-      <section class="container" id="about-me">
-        <img src="/images/me.jpg" alt="This is Me xD" />
-        <h2>About Me</h2>
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="image/me2.jpg" alt="me" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Bayu</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
         <p>
           Hello! My name is Bayu Sukma, i'am a Junior Web Developer who loves
           create a beatiful and responsive website. I like to learn new things
@@ -35,27 +40,95 @@
           development like new frameworks or just make a little Project to
           increase my level in Codings.
         </p>
-      </section>
-      <section class="container" id="my-project">
-        <h2>My Project</h2>
-        <div class="link-project">
-        <ul>
-          <li><a href="https://github.com/Codenames-Ren/Kedai-Kopi-Senja" target="_blank">Kedai Kopi Senja</a></li>
-          <li><a href="https://github.com/Codenames-Ren/Animated-Login-Form" target="_blank">Animated Login Form</a></li>
-        </ul>
+
+        <div class="social-icon">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Codenames-Ren" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="#" class="btn">Hire Me</a>
       </div>
-      </section>
-      <section class="container-2" id="contact-me">
-        <h2>Contact Me</h2>
-        <div class="social-container">
-          <a href="https://www.facebook.com/Lawliet.1.12/" class="social" target="_blank"><i class="lni lni-facebook-fill"></i></a>
-          <a href="mailto:sukmab121@gmail.com" class="social" target="_blank"><i class="lni lni-google"></i></a>
-          <a href="#" class="social"
-            ><i class="lni lni-linkedin-original"></i
-          ></a>
-          <a href="https://github.com/Codenames-Ren" class="social" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-      </section>
-    </main>
-    <footer>&#169; Bayu Sukma - Mahasiswa Global Insitute</footer>
+    </section>
+
+    <section class="experience" id="experience">
+      <h2 class="heading">My Project</h2>
+      <div class="experience-container">
+        <div class="experience-box">
+          <div class="experience-info">
+            <h4>Kedai Kopi Senja</h4>
+            <p>
+              This is a responsive website that I created using a combination of Javascript and Python. This website was created as a form of my achievements while attending lectures in semester 1
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <div class="experience-info">
+            <h4>Animated Login Form</h4>
+            <p>
+              This is a login form page that I created using HTML, CSS, and Javascript. This login page is a single page so the register and login menus are on 1 page and interestingly this login page has animation to enhance its appearance.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <div class="experience-info">
+            <h4>To Do List Program</h4>
+            <p>
+              This is a program that I created as my practice, this program uses the basics of Object Oriented Programming using Python.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <div class="experience-info">
+            <h4>ASCII Video Player using Python</h4>
+            <p>
+              This is a program that I made for fun, this program converts ASCII video into text using Python and of course the video can be played via Terminal and looks unique.
+            </p>
+          </div>
+        </div>
+        <div class="experience-box">
+          <div class="experience-info">
+            <h4>Stay Tuned.</h4>
+            <p>
+              Stay Tuned.
+            </p>
+          </div>
+        </div>
+        <div class="experience-box">
+          <div class="experience-info">
+            <h4>Stay Tuned.</h4>
+            <p>
+              Stay Tuned.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact" id="contact">
+      <section class="contact" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="contact-container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h4>Call Me At :</h4>
+              <div class="social-icon-contact">
+                <a href="https://www.facebook.com/Lawliet.1.12/ " target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:08881785876"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="mailto:sukmab121@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>></i></a>
+                <a href="mailto:0881785876"><i class="fa-brands fa-telegram"></i></a>
+              </div>
+            </div>
+          </div>
+    </section>
+  </main>
+
+    <footer>
+      <p>&#169; Bayu Sukma </p>
+    </footer>
+    
   </body>
 </html>
